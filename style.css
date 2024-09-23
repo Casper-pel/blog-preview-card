@@ -38,7 +38,7 @@ body{
     box-shadow: 10px 10px var(--gray950);
 }
 
-.card img{
+.card svg{
     width: 100%;
 }
 
