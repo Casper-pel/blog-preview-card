@@ -1,0 +1,125 @@
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray500: hsl(0, 0%, 42%);
+    --gray950: hsl(0, 0%, 7%);
+}
+
+@font-face{
+    font-family: "Figtree";
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Figtree", sans-serif;
+}
+
+body{
+    background: var(--yellow);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    width: 80%;
+    max-width: 22rem;
+    background: var(--white);
+    /* height: 100px; */
+    padding: 1.25em;
+    border: 1px solid var(--gray950);
+    border-radius: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px var(--gray950);
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h2{
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--gray950);
+}
+
+.card .learning{
+    float: left;
+    background: var(--yellow);
+    padding: 0.188rem 0.938rem;
+    line-height: 1.55rem;
+    border-radius: 0.313rem;
+    margin-top: 1.125rem;
+}
+
+.card p{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--gray500);
+}
+
+.card .published{
+    color: var(--gray950);
+    margin-top: 0.75rem;
+}
+
+.card h1{
+    font-size: 1.5rem;
+    margin-top: 1.125rem;
+    margin-bottom: 1.1563rem;
+    color: var(--gray950);
+}
+.card h1:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.card div{
+    display: flex;
+    align-items: center;
+    margin-top: 1.25rem;
+    font-size: 1rem;
+}
+
+.card .pic{
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.attribution{ 
+    font-size: 0.688rem; 
+    text-align: center; 
+    margin-top: 1rem;
+}
+
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 390px) {
+    .card h2{
+        font-size: 0.8rem;
+    }
+
+    .card p{
+        font-size: 0.8rem;
+    }
+
+    .card h1{
+        font-size: 1.2rem;
+    }
+
+    .card .pic{
+        width: 2rem;
+        margin-right: 0.5rem
+    }
+
+    .attribution{
+        font-size: 0.6rem;
+    }
+}
